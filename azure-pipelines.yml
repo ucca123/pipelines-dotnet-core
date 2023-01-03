@@ -1,6 +1,8 @@
 trigger:
  - master
-
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
  pool:
    vmImage: 'ubuntu-latest'
 
